@@ -1,0 +1,27 @@
+#默认使用配置
+spring:
+  redis:
+    database: 0
+    host: 47.105.182.32
+    port: 6379
+    password: a7754207
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.105.182.32:3306/tree_hold?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: tree_hold
+    password: a7754207
+    
+
+
+#公共配置与profiles选择无关
+mybatis:
+  typeAliasesPackage: com.xdd.entity
+  mapperLocations: classpath:mapping/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+
+
